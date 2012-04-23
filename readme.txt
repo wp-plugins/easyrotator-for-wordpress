@@ -3,7 +3,7 @@ Contributors: DWUser.com
 Donate link: http://www.dwuser.com/easyrotator/wordpress/
 Tags: rotator, slider, slide, slide show, slideshow, photos, photo, pictures, gallery, photo gallery, image gallery, images, image, media, video, audio, posts, pages, widget, plugin, seo, templates, mobile, iPad, iPhone, touchscreen, jQuery, Adobe AIR, flash replacement
 Requires at least: 2.8
-Tested up to: 3.3.1
+Tested up to: 3.3.2
 Stable tag: 1.0.0
 
 Add beautiful EasyRotator photo rotators and sliders to your WordPress site in seconds.
