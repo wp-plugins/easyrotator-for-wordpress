@@ -10,7 +10,7 @@ License: GPL v2 or later
 */
 
 /*
-Copyright 2011 DWUser.com.
+Copyright 2011-2012 DWUser.com.
 Email contact: support {at] dwuser.com
 
 This file is part of EasyRotator for WordPress.
@@ -54,7 +54,7 @@ else
 // --------------------------------------------------
 
 
-// Startup the engine
+// Start up the engine
 require_once(dirname(__FILE__) . '/engine/main.php');
 
 // WP Stuff
@@ -1884,6 +1884,9 @@ class EasyRotator
 }
 	
 $easyrotator = new EasyRotator();
+
+// Incorporate compatibility for issues other plugins introduce.
+require_once(dirname(__FILE__) . '/compatibility.php');
 
 
 // -----------------------
