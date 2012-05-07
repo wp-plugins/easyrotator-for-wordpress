@@ -1,0 +1,71 @@
+=== EasyRotator for WordPress - Slider Builder ===
+Contributors: DWUser.com
+Donate link: http://www.dwuser.com/easyrotator/wordpress/
+Tags: rotator, slider, slide, slide show, slideshow, photos, photo, pictures, gallery, photo gallery, image gallery, images, image, media, video, audio, posts, pages, widget, plugin, seo, templates, mobile, iPad, iPhone, touchscreen, jQuery, Adobe AIR, flash replacement
+Requires at least: 2.8
+Tested up to: 3.3.2
+Stable tag: 1.0.1
+
+Add beautiful EasyRotator photo rotators and sliders to your WordPress site in seconds.
+
+== Description ==
+
+[vimeo http://vimeo.com/40726828]
+
+EasyRotator for WordPress helps you create beautiful photo rotators and sliders for your WordPress site in seconds.  Add rotators to posts and pages, or add rotator widgets to your theme.  Choose photos and set links, select a layout, make customizations, and everything else is handled for you.  Photos can come from your local computer, your WordPress Media Library, or Featured Images of recent posts.
+
+* Drop-dead easy to use (no coding!)
+* Over 45 flexible templates included
+* Create sliders of recent or featured posts
+* Optional video and audio support
+* Built-in touchscreen / mobile support
+* SEO friendly
+* Amazingly easy to use!
+* Responsive support
+
+**Requirements:** 
+* PHP 5 or higher, WordPress 2.8 or higher
+* Wizard application requires Adobe AIR (auto-installer included)
+* All major browsers are supported; IE6 is not.
+
+**Important Links:**
+
+* [Detailed Help](http://www.dwuser.com/support/easyrotator/wordpress/)
+* [EasyRotator Homepage / Samples](http://www.dwuser.com/easyrotator/)
+
+_EasyRotator is a registered trademark of Magnetic Marketing Corp dba DWUser.com._
+
+== Installation ==
+
+1. Upload the `easyrotator` folder and all of its contents into your plugins directory (`/wp-content/plugins/` by default)
+1. Open the WordPress admin panel and go to the 'Plugins' page
+1. Activate the new 'EasyRotator for WordPress' item in the list of plugins
+1. Follow the on-screen instructions to complete setup
+1. Add rotators to your posts and pages via the new Insert EasyRotator button in the post editor.  Add rotators to your theme via the EasyRotator Rotator widget in the Widgets panel.
+
+**For more installation help, see the [detailed installation and usage guide](http://www.dwuser.com/support/easyrotator/wordpress/).**
+
+== Frequently Asked Questions ==
+
+= I'm having trouble getting started with EasyRotator for WordPress; what can I do? =
+
+Please see the detailed installation and usage instructions [on our website](http://www.dwuser.com/support/easyrotator/wordpress/).  If you can't find the answer there, we offer responsive complimentary support.
+
+== Screenshots ==
+1. The Insert EasyRotator button in the Post/Page editor
+2. The Insert EasyRotator dialog, ready to create our first rotator
+3. Creating our first rotator
+4. The EasyRotator editor application
+5. Rotators can dynamically display WordPress posts - either recent ones, or from specific tags/categories.
+6. The finished rotator in the preview window
+7. The finished rotator inserted in the WordPress editor.  Preview, edit and management options are easily accessible using the box below the editor.
+8. The EasyRotator Rotator widget lets you easily add rotators to widget-compatible themes
+
+== Changelog ==
+= 1.0.1 =
+* Enhancement: New automatic compatibility with Shortcodes Ultimate (automatically adds "raw" shortcode)
+* Bug Fix: Fix bugs with background audio.
+* Bug Fix: Helpful error message now displayed when uploads folder doesn't properly exist (had been empty string)
+
+= 1.0.0 =
+* First release
