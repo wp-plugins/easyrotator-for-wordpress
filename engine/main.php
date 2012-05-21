@@ -1177,9 +1177,18 @@ class EasyRotatorWP
 		
 		// Read the file
 		$content = file_get_contents($contentFile);
+
+        // Update SSL if needed
+        if (is_ssl())
+        {
+            $content = str_replace('http://c520866.r66.cf2.rackcdn.com/', 'https://c520866.ssl.cf2.rackcdn.com/', $content);
+            $content = str_replace('http://easyrotator.s3.amazonaws.com/', 'https://easyrotator.s3.amazonaws.com/', $content);
+        }
 		
 		// --- Update all images in the content section to use the full path ---
 		$urlHere = $this->getContentDirURL() . $fullPath . '/content/';
+        if (is_ssl())
+            $urlHere = preg_replace('|^http://|', 'https://', $urlHere);
 		
 		// Find the content
 		$s = $content;
