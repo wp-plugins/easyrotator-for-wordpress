@@ -4,7 +4,7 @@ Donate link: http://www.dwuser.com/easyrotator/wordpress/
 Tags: rotator, slider, slide, slide show, slideshow, photos, photo, pictures, gallery, photo gallery, image gallery, images, image, media, video, audio, posts, pages, widget, plugin, seo, templates, mobile, iPad, iPhone, touchscreen, jQuery, Adobe AIR, flash replacement
 Requires at least: 2.8
 Tested up to: 3.3.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Add beautiful EasyRotator photo rotators and sliders to your WordPress site in seconds.
 
@@ -62,6 +62,9 @@ Please see the detailed installation and usage instructions [on our website](htt
 8. The EasyRotator Rotator widget lets you easily add rotators to widget-compatible themes
 
 == Changelog ==
+= 1.0.2 =
+* Enhancement: New automatic support for SSL viewing
+
 = 1.0.1 =
 * Enhancement: New automatic compatibility with Shortcodes Ultimate (automatically adds "raw" shortcode)
 * Bug Fix: Fix bugs with background audio.
