@@ -1179,7 +1179,7 @@ class EasyRotatorWP
 		$content = file_get_contents($contentFile);
 
         // Update SSL if needed
-        if (is_ssl())
+        if (is_ssl()) // update!
         {
             $content = str_replace('http://c520866.r66.cf2.rackcdn.com/', 'https://c520866.ssl.cf2.rackcdn.com/', $content);
             $content = str_replace('http://easyrotator.s3.amazonaws.com/', 'https://easyrotator.s3.amazonaws.com/', $content);
