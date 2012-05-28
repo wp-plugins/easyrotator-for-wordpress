@@ -43,6 +43,16 @@ _EasyRotator is a registered trademark of Magnetic Marketing Corp dba DWUser.com
 1. Follow the on-screen instructions to complete setup
 1. Add rotators to your posts and pages via the new Insert EasyRotator button in the post editor.  Add rotators to your theme via the EasyRotator Rotator widget in the Widgets panel.
 
+**To add rotators directly to template files (e.g. in the site header):**
+
+You can use the template function included with the plugin.  To do this, first create your rotator in a temporary page so you can get the special rotator ID code.  Then, use the following function in your template:
+
+`<?php
+easyrotator_display_rotator('erc_00_xxxxxxx');
+?>`
+
+Replace `erc_00_xxxxxx`  with the real code you obtained by creating the rotator.
+
 **For more installation help, see the [detailed installation and usage guide](http://www.dwuser.com/support/easyrotator/wordpress/).**
 
 == Frequently Asked Questions ==
