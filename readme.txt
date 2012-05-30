@@ -45,13 +45,17 @@ _EasyRotator is a registered trademark of Magnetic Marketing Corp dba DWUser.com
 
 **To add rotators directly to template files (e.g. in the site header):**
 
-You can use the template function included with the plugin.  To do this, first create your rotator in a temporary page so you can get the special rotator ID code.  Then, use the following function in your template:
+You can use the template function included with the plugin.  To do this, first create your rotator and insert it into a temporary page; this will allow you to obtain the special rotator ID code.  When you insert the rotator in your page, a shortcode will be inserted:
+
+`[easyrotator]erc_00_xxxxxxx[/easyrotator]`
+
+The `erc_00_xxxxxxx` value is the special rotator ID code.  To add this rotator to your template, add the following function call in your template file:
 
 `<?php
 easyrotator_display_rotator('erc_00_xxxxxxx');
 ?>`
 
-Replace `erc_00_xxxxxx`  with the real code you obtained by creating the rotator.
+Replace `erc_00_xxxxxxx`  with the real code you obtained by creating the rotator.
 
 **For more installation help, see the [detailed installation and usage guide](http://www.dwuser.com/support/easyrotator/wordpress/).**
 
