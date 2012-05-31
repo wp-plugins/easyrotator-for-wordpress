@@ -65,6 +65,20 @@ Replace `erc_00_xxxxxxx`  with the real code you obtained by creating the rotato
 
 Please see the detailed installation and usage instructions [on our website](http://www.dwuser.com/support/easyrotator/wordpress/).  If you can't find the answer there, we offer responsive complimentary support.
 
+= I want to add a rotator to my theme's header; how can I do this? =
+
+You can use the template function included with the plugin.  To do this, first create your rotator and insert it into a temporary page; this will allow you to obtain the special rotator ID code.  When you insert the rotator in your page, a shortcode will be inserted:
+
+`[easyrotator]erc_00_xxxxxxx[/easyrotator]`
+
+The `erc_00_xxxxxxx` value is the special rotator ID code.  To add this rotator to your template, add the following function call in your template file:
+
+`<?php
+easyrotator_display_rotator('erc_00_xxxxxxx');
+?>`
+
+Replace `erc_00_xxxxxxx`  with the real code you obtained by creating the rotator.
+
 == Screenshots ==
 1. The Insert EasyRotator button in the Post/Page editor
 2. The Insert EasyRotator dialog, ready to create our first rotator
