@@ -67,7 +67,7 @@ Please see the detailed installation and usage instructions [on our website](htt
 
 = I want to add a rotator to my theme's header; how can I do this? =
 
-You can use the template function included with the plugin.  To do this, first create your rotator and insert it into a temporary page; this will allow you to obtain the special rotator ID code.  When you insert the rotator in your page, a shortcode will be inserted:
+You can use the template function included with the plugin to add rotators to the header or any other area of your template.  To do this, first create your rotator and insert it into a temporary page; this will allow you to obtain the special rotator ID code.  When you insert the rotator in your page, a shortcode will be inserted:
 
 `[easyrotator]erc_00_xxxxxxx[/easyrotator]`
 
