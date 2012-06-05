@@ -298,7 +298,7 @@ class EasyRotatorWP
 				}
 				elseif (!is_writable($fullDest) && !@chmod($fullDest, 0777))
 				{
-					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorContent/ directory.');
+					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory.');
 					return;
 				}
 				// note: not validating if folder name is already being used
@@ -341,7 +341,7 @@ class EasyRotatorWP
 				}
 				elseif (!is_writable($path) && !@chmod($path, 0777))
 				{
-					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorContent/ directory.');
+					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory.');
 					return;
 				}
 				
@@ -382,7 +382,7 @@ class EasyRotatorWP
 				}
 				elseif (!is_writable($infoPath) && !@chmod($infoPath, 0777))
 				{
-					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorContent/ directory.');
+					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory.');
 					return;
 				}
 				if ($newName == '')
@@ -437,7 +437,7 @@ class EasyRotatorWP
 				}
 				elseif (!is_writable($path) && !@chmod($path, 0777))
 				{
-					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorContent/ directory.');
+					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory.');
 					return;
 				}
 				if ($name == '')
@@ -496,7 +496,7 @@ class EasyRotatorWP
 				}
 				elseif (!is_writable($path) && !@chmod($path, 0777))
 				{
-					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorContent/ directory.');
+					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory.');
 					return;
 				}
 				
@@ -537,7 +537,7 @@ class EasyRotatorWP
 				}
 				elseif (!is_writable($infoPath) && !@chmod($infoPath, 0777))
 				{
-					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorContent/ directory.');
+					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory.');
 					return;
 				}
 				
@@ -579,12 +579,12 @@ class EasyRotatorWP
 				}
 				elseif (!is_writable($path) && !@chmod($path, 0777))
 				{
-					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorContent/ directory.');
+					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory.');
 					return;
 				}
 				elseif (!is_writable($infoPath) && !@chmod($infoPath, 0777))
 				{
-					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorContent/ directory.');
+					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory.');
 					return;
 				}
 				
@@ -638,17 +638,17 @@ class EasyRotatorWP
 				}
 				elseif (!is_writable($path) && !@chmod($path, 0777))
 				{
-					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorContent/ directory.');
+					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory.');
 					return;
 				}
 				elseif (!is_writable($path . '/content') && !@chmod($path . '/content', 0777))
 				{
-					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorContent/ directory.');
+					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory.');
 					return;
 				}
 				elseif (!is_writable($infoPath) && !@chmod($infoPath, 0777))
 				{
-					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorContent/ directory.');
+					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory.');
 					return;
 				}
 				
@@ -712,7 +712,7 @@ class EasyRotatorWP
 				}
 				elseif (!is_writable($infoPath) && !@chmod($infoPath, 0777))
 				{
-					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorContent/ directory.');
+					$this->outputAPIError('config', 'Specified location is not writeable.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory.');
 					return;
 				}
 				
@@ -1179,7 +1179,7 @@ class EasyRotatorWP
 		$content = file_get_contents($contentFile);
 
         // Update SSL if needed
-        if (is_ssl()) // update!
+        if (is_ssl())
         {
             $content = str_replace('http://c520866.r66.cf2.rackcdn.com/', 'https://c520866.ssl.cf2.rackcdn.com/', $content);
             $content = str_replace('http://easyrotator.s3.amazonaws.com/', 'https://easyrotator.s3.amazonaws.com/', $content);
@@ -2056,9 +2056,23 @@ class EasyRotatorWPUtils
 			{
 				return array('success'=>false, 'message'=>'Server error occurred (upload failed).  Please try again.');
 			}*/
-			
+
+            // Move the uploaded file; we were passed a /content path, so we'll temporarily place the zip in the parent dir
+            $tempZipLocation = dirname($dest) . '/temp.zip';
+            if (file_exists($tempZipLocation))
+            {
+                if (!@unlink($tempZipLocation))
+                {
+                    return array('success'=>false, 'message'=>'Unable to remove temporary ZIP file.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory.');
+                }
+            }
+            if (!@move_uploaded_file($_FILES['Filedata']['tmp_name'], $tempZipLocation))
+            {
+                return array('success'=>false, 'message'=>'Unable to move uploaded file.  Please double-check that 777 write permissions are fully enabled on the wp-content/uploads/EasyRotatorStorage/ directory and that the server is properly configured to handle file uploads.');
+            }
+
 			// Attempt to unzip file file
-			$zip = new dUnzip2($_FILES['Filedata']['tmp_name']);
+			$zip = new dUnzip2($tempZipLocation);
 
 			// Activate debug
 			//$zip->debug = true;
@@ -2066,6 +2080,9 @@ class EasyRotatorWPUtils
 			// Unzip all the contents of the zipped file
 			$zip->getList();
 			$zip->unzipAll($dest);
+
+            // Remove the temporary ZIP file
+            @unlink($tempZipLocation);
 			
 			return array('success'=>true);
 			
