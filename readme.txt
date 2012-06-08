@@ -79,6 +79,8 @@ easyrotator_display_rotator('erc_00_xxxxxxx');
 
 Replace `erc_00_xxxxxxx`  with the real code you obtained by creating the rotator.
 
+[More details...](http://www.dwuser.com/support/easyrotator/kb/template-function/)
+
 = I'm using EasyRotator for WordPress on a RTL (right-to-left) site, and the images don't appear =
 
 When working with an RTL site, you need to add the following CSS to your theme's stylesheet:
