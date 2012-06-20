@@ -93,7 +93,7 @@ When working with an RTL site, you need to add the following CSS to your theme's
    direction: ltr;
 }`
 
-This will ensure that the rotators appear and function properly.
+This will ensure that the rotators appear and function properly.  (Update: This code is now automatically applied for you in most cases.)
 
 == Screenshots ==
 1. The Insert EasyRotator button in the Post/Page editor
