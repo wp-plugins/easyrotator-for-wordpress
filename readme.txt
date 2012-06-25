@@ -59,6 +59,8 @@ easyrotator_display_rotator('erc_00_xxxxxxx');
 
 Replace `erc_00_xxxxxxx`  with the real code you obtained by creating the rotator.
 
+[More details...](http://www.dwuser.com/support/easyrotator/kb/template-function/)
+
 **For more installation help, see the [detailed installation and usage guide](http://www.dwuser.com/support/easyrotator/wordpress/).**
 
 == Frequently Asked Questions ==
