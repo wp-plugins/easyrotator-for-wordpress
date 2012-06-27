@@ -87,7 +87,7 @@ Replace `erc_00_xxxxxxx`  with the real code you obtained by creating the rotato
 
 = How can I customize the layout? =
 
-You can read about making both basic and advanced customizations to layouts [in this article](http://www.dwuser.com/support/easyrotator/kb/customize-layout/).
+You can read about making both basic and advanced customizations to layouts [in this article](http://www.dwuser.com/support/easyrotator/kb/customize-layout/).  You can customize positioning, fonts, colors, and even button images.
 
 = I'm using EasyRotator for WordPress on a RTL (right-to-left) site, and the images don't appear =
 
