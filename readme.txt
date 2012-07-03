@@ -99,6 +99,10 @@ When working with an RTL site, you need to add the following CSS to your theme's
 
 This will ensure that the rotators appear and function properly.  (Update: This code is now automatically applied for you in most cases.)
 
+= Does EasyRotator work properly on SSL sites? =
+
+The most recent versions of the plugin are automatically compatible with SSL sites.  If a page is being viewed over SSL, all rotators will be updated appropriately to avoid mixed-content warnings.
+
 == Screenshots ==
 1. The Insert EasyRotator button in the Post/Page editor
 2. The Insert EasyRotator dialog, ready to create our first rotator
