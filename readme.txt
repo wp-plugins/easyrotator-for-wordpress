@@ -101,7 +101,7 @@ This will ensure that the rotators appear and function properly.  (Update: This 
 
 = Does EasyRotator work properly on SSL sites? =
 
-The most recent versions of the plugin are automatically compatible with SSL sites.  If a page is being viewed over SSL, all rotators will be updated appropriately to avoid mixed-content warnings.
+Yes!  The most recent versions of the plugin are automatically compatible with SSL sites.  If a page is being viewed over SSL, all rotators will be updated appropriately to avoid mixed-content warnings.
 
 == Screenshots ==
 1. The Insert EasyRotator button in the Post/Page editor
