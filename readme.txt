@@ -99,6 +99,10 @@ When working with an RTL site, you need to add the following CSS to your theme's
 
 This will ensure that the rotators appear and function properly.  (Update: This code is now automatically applied for you in most cases.)
 
+= How can I configure the way photos are scaled and/or cropped? =
+
+To learn more about setting photo scaling and cropping options, see [this article](http://www.dwuser.com/support/easyrotator/kb/photo-cropping/).
+
 = Does EasyRotator work properly on SSL sites? =
 
 Yes!  The most recent versions of the plugin are automatically compatible with SSL sites.  If a page is being viewed over SSL, all rotators will be updated appropriately to avoid mixed-content warnings.
