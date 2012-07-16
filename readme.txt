@@ -101,7 +101,7 @@ This will ensure that the rotators appear and function properly.  (Update: This 
 
 = How can I configure the way photos are scaled and/or cropped? =
 
-To learn more about setting photo scaling and cropping options, see [this article](http://www.dwuser.com/support/easyrotator/kb/photo-cropping/).
+To learn more about configuring photo scaling and cropping options, see [this article](http://www.dwuser.com/support/easyrotator/kb/photo-cropping/).
 
 = I'm having trouble with photos shifting or appearing with borders =
 
