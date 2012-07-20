@@ -1,4 +1,4 @@
-=== EasyRotator for WordPress - Slider Builder ===
+=== EasyRotator for WordPress - Slider Plugin ===
 Contributors: DWUser.com
 Donate link: http://www.dwuser.com/easyrotator/wordpress/
 Tags: rotator, slider, slide, slide show, slideshow, photos, photo, pictures, gallery, photo gallery, image gallery, images, image, media, video, audio, posts, pages, widget, plugin, seo, WordPress slider, templates, mobile, iPad, iPhone, touchscreen, jQuery, Adobe AIR, flash replacement
