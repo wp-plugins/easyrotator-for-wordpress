@@ -6,13 +6,13 @@ Requires at least: 2.8
 Tested up to: 3.4.1
 Stable tag: 1.0.3
 
-Add beautiful EasyRotator photo rotators and sliders to your WordPress site in seconds.
+Add beautiful, responsive EasyRotator photo rotators and sliders to your WordPress site in seconds.
 
 == Description ==
 
 [vimeo http://vimeo.com/40726828]
 
-EasyRotator for WordPress helps you create beautiful photo rotators and sliders for your WordPress site in seconds.  Add rotators to posts and pages, or add rotator widgets to your theme.  Choose photos and set links, select a layout, make customizations, and everything else is handled for you.  Photos can come from your local computer, your WordPress Media Library, or Featured Images of recent posts.
+EasyRotator for WordPress helps you create beautiful, responsive photo rotators and sliders for your WordPress site in seconds.  Add rotators to posts and pages, or add rotator widgets to your theme.  Choose photos and set links, select a layout, make customizations, and everything else is handled for you.  Photos can come from your local computer, your WordPress Media Library, or Featured Images of recent posts.
 
 * Drop-dead easy to use (no coding!)
 * Over 45 flexible templates included
