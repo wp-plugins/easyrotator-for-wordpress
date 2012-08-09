@@ -103,6 +103,10 @@ This will ensure that the rotators appear and function properly.  (Update: This 
 
 Scaling and cropping are set when you apply a layout template in the Layout/Presentation section of the editor.  To learn more about these options, see [this article](http://www.dwuser.com/support/easyrotator/kb/photo-cropping/).
 
+= How can I change the alignment of my rotator? =
+
+For information about modifying rotator alignment, see [this article](http://www.dwuser.com/support/easyrotator/kb/alignment/).
+
 = I'm having trouble with photos shifting or appearing with borders =
 
 This is usually caused by overly-broad declarations in your stylesheet.  [Open a support ticket](http://www.dwuser.com/#bottomBoxes) and include the URL of your page; we'll help you identify the code you need to add.
