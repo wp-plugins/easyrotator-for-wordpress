@@ -4,7 +4,7 @@ Donate link: http://www.dwuser.com/easyrotator/wordpress/
 Tags: rotator, slider, slide, slide show, slideshow, photos, photo, pictures, gallery, photo gallery, image gallery, images, image, media, video, audio, posts, pages, widget, plugin, seo, WordPress slider, templates, mobile, iPad, iPhone, touchscreen, jQuery, Adobe AIR, flash replacement
 Requires at least: 2.8
 Tested up to: 3.4.1
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 
 Add beautiful, responsive EasyRotator photo rotators and sliders to your WordPress site in seconds.
 
@@ -126,6 +126,10 @@ Yes!  The most recent versions of the plugin are automatically compatible with S
 8. The EasyRotator Rotator widget lets you easily add rotators to widget-compatible themes
 
 == Changelog ==
+= 1.0.5 =
+* Compatibility Enhancement: Built-in warning for new Windows Chrome / AIR compatibility issue.
+* Bug Fix: Avoid 2130 errors when launching EasyRotator manager in WordPress.
+
 = 1.0.4 =
 * Enhancement: Compatibility with RSS feeds.  Instead of rendering the full rotator code, only the first photo will be shown.  A special comment is inserted, allowing for customization of this display (see FAQs for soon-forthcoming documentation).
 * Enhancement: New advanced option that allows for explicitly setting the photo sizes to be loaded for Main images and Thumbnail images when using dynamic data.  Note that installation of the latest editor application update is required to access this feature.
