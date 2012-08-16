@@ -111,6 +111,10 @@ For information about modifying rotator alignment, see [this article](http://www
 
 This is usually caused by overly-broad declarations in your stylesheet.  [Open a support ticket](http://www.dwuser.com/#bottomBoxes) and include the URL of your page; we'll help you identify the code you need to add.
 
+= How can I create an images-only rotator? =
+
+To learn how to create an images-only layout for your rotator, see [this article](http://www.dwuser.com/support/easyrotator/kb/images-only-layout/).
+
 = Does EasyRotator work properly on SSL sites? =
 
 Yes!  The most recent versions of the plugin are automatically compatible with SSL sites.  If a page is being viewed over SSL, all rotators will be updated appropriately to avoid mixed-content warnings.
