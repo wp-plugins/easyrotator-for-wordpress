@@ -119,6 +119,10 @@ To learn how to create an images-only layout for your rotator, see [this article
 
 To learn more about what video types are supported and how to integrate video, see [this article](http://www.dwuser.com/support/easyrotator/kb/video-faqs/).
 
+= How can I make links open in a new window? =
+
+To learn about setting link targets, see [this article](http://www.dwuser.com/support/easyrotator/kb/link-target/).
+
 = Does EasyRotator work properly on SSL sites? =
 
 Yes!  The most recent versions of the plugin are automatically compatible with SSL sites.  If a page is being viewed over SSL, all rotators will be updated appropriately to avoid mixed-content warnings.
