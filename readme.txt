@@ -123,6 +123,10 @@ To learn more about what video types are supported and how to integrate video, s
 
 To learn about setting link targets, see [this article](http://www.dwuser.com/support/easyrotator/kb/link-target/).
 
+= How can I link the titles to corresponding posts? =
+
+When using dynamic data in a rotator, you may want to link the image titles to their corresponding posts.  To learn about how to enable this setting, see [this article](http://www.dwuser.com/support/easyrotator/kb/automatically-link-title/).
+
 = Does EasyRotator work properly on SSL sites? =
 
 Yes!  The most recent versions of the plugin are automatically compatible with SSL sites.  If a page is being viewed over SSL, all rotators will be updated appropriately to avoid mixed-content warnings.
