@@ -33,7 +33,7 @@ EasyRotator for WordPress helps you create beautiful, responsive photo rotators 
 **Important Links:**
 
 * [Detailed Help](http://www.dwuser.com/support/easyrotator/wordpress/)
-* [EasyRotator Homepage / Samples](http://www.dwuser.com/easyrotator/)
+* [EasyRotator Homepage / Samples](http://www.dwuser.com/easyrotator/) 
 
 _EasyRotator is a registered trademark of Magnetic Marketing Corp dba DWUser.com._
 
