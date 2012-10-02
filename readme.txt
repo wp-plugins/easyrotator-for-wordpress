@@ -33,7 +33,7 @@ EasyRotator for WordPress helps you create beautiful, responsive photo rotators 
 **Important Links:**
 
 * [Detailed Help](http://www.dwuser.com/support/easyrotator/wordpress/)
-* [EasyRotator Homepage / Samples](http://www.dwuser.com/easyrotator/) 
+* [EasyRotator Homepage / Samples](http://www.dwuser.com/easyrotator/)
 
 _EasyRotator is a registered trademark of Magnetic Marketing Corp dba DWUser.com._
 
@@ -121,7 +121,7 @@ To learn more about what video types are supported and how to integrate video, s
 
 = How can I make links open in a new window? =
 
-To learn about setting link targets, see [this article](http://www.dwuser.com/support/easyrotator/kb/link-target/).
+To learn about setting link targets, see [this article](http://www.dwuser.com/support/easyrotator/kb/link-target/) .
 
 = How can I link slide titles to corresponding posts? =
 
