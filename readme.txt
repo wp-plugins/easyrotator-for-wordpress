@@ -121,7 +121,7 @@ To learn more about what video types are supported and how to integrate video, s
 
 = How can I make links open in a new window? =
 
-To learn about setting link targets, see [this article](http://www.dwuser.com/support/easyrotator/kb/link-target/).  
+To learn about setting link targets, see [this article](http://www.dwuser.com/support/easyrotator/kb/link-target/).
 
 = How can I link slide titles to corresponding posts? =
 
