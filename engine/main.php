@@ -1219,7 +1219,7 @@ class EasyRotatorWP
 				'$matches',
 				'
 				$src = $matches[2];
-				if (!preg_match(\'|^[a-z]+://|i\', $src)) // check for protocol
+				if (!preg_match(\'|^[a-z]+://|i\', $src) && !preg_match(\'|^/|\', $src)) // check for protocol, site-relative
 					return ($matches[1] . \'' . $urlHere . '\' . $matches[2] . $matches[3]);
 				return $matches[0];
 				'
