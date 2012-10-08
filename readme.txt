@@ -127,6 +127,10 @@ To learn about setting link targets, see [this article](http://www.dwuser.com/su
 
 When using dynamic data in a rotator, you may want to link the image titles to their corresponding posts.  To learn about how to enable this setting, see [this article](http://www.dwuser.com/support/easyrotator/kb/automatically-link-title/).
 
+= How can I customize the RSS feed view? =
+
+To learn more about the way rotators appears in RSS feed view and how to customize this view, see [this article](http://www.dwuser.com/support/easyrotator/kb/rss-compatibility/).
+
 = Does EasyRotator work properly on SSL sites? =
 
 Yes!  The most recent versions of the plugin are automatically compatible with SSL sites.  If a page is being viewed over SSL, all rotators will be updated appropriately to avoid mixed-content warnings.
@@ -152,7 +156,7 @@ Yes!  The most recent versions of the plugin are automatically compatible with S
 * Bug Fix: Avoid 2130 errors when launching EasyRotator manager in WordPress.
 
 = 1.0.4 =
-* Enhancement: Compatibility with RSS feeds.  Instead of rendering the full rotator code, only the first photo will be shown.  A special comment is inserted, allowing for customization of this display (see FAQs for soon-forthcoming documentation).
+* Enhancement: Compatibility with RSS feeds.  Instead of rendering the full rotator code, only the first photo will be shown.  A special comment is inserted, allowing for customization of this display (see FAQs for documentation).
 * Enhancement: New advanced option that allows for explicitly setting the photo sizes to be loaded for Main images and Thumbnail images when using dynamic data.  Note that installation of the latest editor application update is required to access this feature.
 * Enhancement: Better compatibility with shared hosting system where non-fatal errors occur or analytics/ad code is appended to each API request.
 * Enhancement: Better debug messages when errors occur, including links to help content.
