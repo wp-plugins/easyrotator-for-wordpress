@@ -129,7 +129,7 @@ When using dynamic data in a rotator, you may want to link the image titles to t
 
 = How can I customize the RSS feed view? =
 
-To learn more about the way rotators appears in RSS feed view and how to customize this view, see [this article](http://www.dwuser.com/support/easyrotator/kb/rss-compatibility/).
+To learn more about the way rotators appears in RSS feed view and how to customize this view, see [this article](http://www.dwuser.com/support/easyrotator/kb/rss-compatibility/). 
 
 = Does EasyRotator work properly on SSL sites? =
 
