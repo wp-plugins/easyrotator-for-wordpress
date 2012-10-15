@@ -119,7 +119,7 @@ To learn how to create an images-only layout for your rotator, see [this article
 
 = Is it possible to add Pinterest sharing buttons to my rotators? =
 
-We recently released an add-on that enables social sharing for rotators.  By default, options are included for Pinterest, Twitter and Facebook; these can be customized if desired.  To learn more, see [this article](http://www.dwuser.com/education/content/free-add-on-social-sharing-for-easyrotator/).
+We recently released an add-on that enables social sharing for rotators.  By default, options are included for Pinterest, Twitter and Facebook; these can be customized if desired.  To learn more, see [this article](http://www.dwuser.com/education/content/free-add-on-social-sharing-for-easyrotator/). 
 
 = What types of video can I use in a rotator? =
 
