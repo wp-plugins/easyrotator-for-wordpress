@@ -129,6 +129,10 @@ To learn more about what video types are supported and how to integrate video, s
 
 To learn about setting link targets, see [this article](http://www.dwuser.com/support/easyrotator/kb/link-target/).
 
+= How can I transfer rotators from one site to another? =
+
+If you need to move rotators from a development to production site, or an old site to a new site, see [this article](http://www.dwuser.com/support/easyrotator/kb/transfer-rotators/) for directions.
+
 = How can I link slide titles to corresponding posts? =
 
 When using dynamic data in a rotator, you may want to link the image titles to their corresponding posts.  To learn about how to enable this setting, see [this article](http://www.dwuser.com/support/easyrotator/kb/automatically-link-title/).
