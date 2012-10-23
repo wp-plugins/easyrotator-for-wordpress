@@ -4,7 +4,7 @@ Donate link: http://www.dwuser.com/easyrotator/wordpress/
 Tags: rotator, slider, slide, slide show, slideshow, photos, photo, pictures, gallery, photo gallery, image gallery, images, image, media, video, audio, posts, pages, widget, plugin, seo, WordPress slider, templates, mobile, iPad, iPhone, touchscreen, jQuery, Adobe AIR, flash replacement
 Requires at least: 2.8
 Tested up to: 3.5 Beta 2
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,10 @@ To learn more about what video types are supported and how to integrate video, s
 = How can I make links open in a new window? =
 
 To learn about setting link targets, see [this article](http://www.dwuser.com/support/easyrotator/kb/link-target/).
+
+= How can I transfer rotators from one site to another? =
+
+If you need to move rotators from a development to production site, or an old site to a new site, see [this article](http://www.dwuser.com/support/easyrotator/kb/transfer-rotators/) for directions.
 
 = How can I link slide titles to corresponding posts? =
 
