@@ -420,7 +420,11 @@ class EasyRotator
 		var_dump(get_user_option('rich_editing'));
 		echo('</p></div>');
 		*/
-		
+
+        // Make sure this user is allowed to edit
+        if ( !current_user_can('edit_posts') || !current_user_can('edit_pages') )
+            return;
+
 		// Show the welcome/setup notice if needed
 		if (get_user_option('easyrotator_welcome_notice_hide') !== 'yes')
 		{
