@@ -2023,7 +2023,7 @@ class EasyRotatorWPUtils
 		}
 		
 		// Check for upload errors
-		if ($_FILES['Filedata']['error'] && $_FILES['Filedata']['error'] != '4') 
+		if ($_FILES['Filedata']['error'] && $_FILES['Filedata']['error'] != '4')
 		{
 			return array('success'=>false, 'message'=>$upload_errors_friendly[$_FILES['Filedata']['error']]);
 		}
