@@ -21,7 +21,7 @@ EasyRotator for WordPress helps you create beautiful, responsive photo rotators 
 * Create sliders of recent or featured posts
 * Optional video and audio support
 * Built-in touchscreen / mobile support
-* SEO friendly
+* SEO friendly 
 * Amazingly easy to use!
 * Responsive theme support - just specify an aspect ratio! 
 
