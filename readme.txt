@@ -27,7 +27,7 @@ EasyRotator for WordPress helps you create beautiful, responsive photo rotators 
 
 **Requirements:** 
 
-* PHP 5 or higher, WordPress 2.8 or higher
+* PHP 5 or higher, WordPress 2.8 or higher 
 * Wizard application requires Adobe AIR (auto-installer included)
 * All major browsers are supported; IE6 is not.
 * To _edit rotators_, Windows or Mac is required.  [Linux usually works](http://www.dwuser.com/support/easyrotator/kb/linux/), but is not officially supported.
