@@ -18,6 +18,7 @@ EasyRotator for WordPress helps you create beautiful, responsive photo rotators 
 
 * Drop-dead easy to use (no coding!)
 * Over 45 flexible templates included
+* No limit to the number of sliders
 * Create sliders of recent or featured posts
 * Optional video and audio support
 * Built-in touchscreen / mobile support
@@ -28,9 +29,9 @@ EasyRotator for WordPress helps you create beautiful, responsive photo rotators 
 **Requirements:** 
 
 * PHP 5 or higher, WordPress 2.8 or higher
-* Wizard application requires Adobe AIR (auto-installer included)
-* All major browsers are supported; IE6 is not.
-* To _edit rotators_, Windows or Mac is required.  [Linux usually works](http://www.dwuser.com/support/easyrotator/kb/linux/), but is not officially supported.
+* All major browsers and mobile devices are supported for viewing rotators; IE6 is not.
+* Wizard application (for **editing** rotators) requires Adobe AIR (auto-installer included)
+* To **edit** rotators, Windows or Mac is required.  [Linux usually works](http://www.dwuser.com/support/easyrotator/kb/linux/), but is not officially supported.
 
 **Important Links:**
 
