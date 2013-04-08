@@ -3,7 +3,7 @@
 Plugin Name: EasyRotator for WordPress
 Plugin URI: http://www.dwuser.com/easyrotator/wordpress/
 Description: Add professional, customizable photo sliders to your site in seconds.  Powered by the EasyRotator application from DWUser.com.
-Version: 1.0.7
+Version: 1.0.8
 Author: DWUser.com
 Author URI: http://www.dwuser.com/
 License: GPL v2 or later
@@ -111,14 +111,26 @@ class EasyRotator
 	
 	function hook_admin_init()
 	{
+        global $wp_version;
+
         $includeJQUICSS = true;
         if (stripos(@$_GET['page'], 'pagelines') === 0)
             $includeJQUICSS = false;
 
         if ($includeJQUICSS)
-		    wp_enqueue_style(  'jquery-ui-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+        {
+            // We have to include the jQueryUI version that matches this WP version, since it changes with 3.6
+            if (version_compare($wp_version, '3.5', '>'))
+            {
+                wp_enqueue_style(  'jquery-ui-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/themes/smoothness/jquery-ui.css');
+            }
+            else
+            {
+		        wp_enqueue_style(  'jquery-ui-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+            }
             // to investigate: wp_enqueue_style( 'wp-jquery-ui-dialog' );
-		        
+        }
+
 		// All er-specific admin css
         wp_register_style( 'easyrotator-plugin-admin-css', $this->url . 'css/easyrotator_admin.css', array(), '1.0.0', 'all' );
 		wp_enqueue_style( 'easyrotator-plugin-admin-css' );
@@ -352,6 +364,15 @@ class EasyRotator
 			}
 			<?php
 		}
+        if (version_compare($wp_version, '3.5', '>'))
+        {
+            // Use a higher z-index for the new jQueryUI CSS
+            ?>
+            .ui-front {
+                z-index: 169999 !important;
+            }
+            <?php
+        }
 		echo('</style>');
 		
 		// Add IE9(+?) specific fixes to fix SWF rendering... thx MS for nuking conditional comments so we have to do this hacky sniffing baloney.
@@ -1695,14 +1716,17 @@ class EasyRotator
 
 
 			// First, listeners for standard HTML.  Keyup to handle typing/pasting, focus to handle modifications by edInsertContent or edInsertTag.
-			var rawCanvas = $(edCanvas);
-			rawCanvas.bind('keyup focus', function()
-			{
-				processContent(rawCanvas.val());
-			});
-			
-			// Process the initial value...
-			processContent(rawCanvas.val());
+			if (window['edCanvas'])
+            {
+                var rawCanvas = $(edCanvas);
+                rawCanvas.bind('keyup focus', function()
+                {
+                    processContent(rawCanvas.val());
+                });
+
+                // Process the initial value...
+                processContent(rawCanvas.val());
+            }
 			
 			// Next, listeners for tinymce.  onKeyUp to handle typing/pasting, onChange to handle other manipulations.
 			var tinyMCE_listener = function(ed)
