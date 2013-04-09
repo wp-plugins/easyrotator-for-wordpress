@@ -4,7 +4,7 @@ Donate link: http://www.dwuser.com/easyrotator/wordpress/
 Tags: rotator, slider, slide, slide show, slideshow, photos, photo, pictures, gallery, photo gallery, image gallery, images, image, media, video, audio, posts, pages, widget, plugin, seo, WordPress slider, templates, mobile, iPad, iPhone, touchscreen, jQuery, Adobe AIR, flash replacement
 Requires at least: 2.8
 Tested up to: 3.6 Beta 1
-Stable tag: 1.0.7
+Stable tag: 1.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,7 +26,7 @@ EasyRotator for WordPress helps you create beautiful, responsive photo rotators 
 * Amazingly easy to use!
 * Responsive theme support - just specify an aspect ratio! 
 
-**Requirements:** 
+**Requirements:**
 
 * PHP 5 or higher, WordPress 2.8 or higher
 * All major browsers and mobile devices are supported for viewing rotators; IE6 is not.
