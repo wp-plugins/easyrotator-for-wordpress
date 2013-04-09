@@ -26,7 +26,7 @@ EasyRotator for WordPress helps you create beautiful, responsive photo rotators 
 * Amazingly easy to use!
 * Responsive theme support - just specify an aspect ratio! 
 
-**Requirements:** 
+**Requirements:**  
 
 * PHP 5 or higher, WordPress 2.8 or higher
 * All major browsers and mobile devices are supported for viewing rotators; IE6 is not.
