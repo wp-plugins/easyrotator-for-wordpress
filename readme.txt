@@ -3,8 +3,8 @@ Contributors: DWUser.com
 Donate link: http://www.dwuser.com/easyrotator/wordpress/
 Tags: rotator, slider, slide, slide show, slideshow, photos, photo, pictures, gallery, photo gallery, image gallery, images, image, media, video, audio, posts, pages, widget, plugin, seo, WordPress slider, templates, mobile, iPad, iPhone, touchscreen, jQuery, Adobe AIR, flash replacement
 Requires at least: 2.8
-Tested up to: 3.8.1
-Stable tag: 1.0.10
+Tested up to: 3.9 RC2
+Stable tag: 1.0.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -161,6 +161,9 @@ Yes!  The most recent versions of the plugin are automatically compatible with S
 8. The EasyRotator Rotator widget lets you easily add rotators to widget-compatible themes
 
 == Changelog ==
+= 1.0.11 =
+* Compatibility Enhancement: Support for WordPress 3.9, including the theme customizer
+
 = 1.0.10 =
 * Compatibility Enhancement: Better Safari support on widget page (not WordPress-version specific); may avoid a "blocked click" click on some installation configurations.
 

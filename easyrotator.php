@@ -3,14 +3,14 @@
 Plugin Name: EasyRotator for WordPress
 Plugin URI: http://www.dwuser.com/easyrotator/wordpress/
 Description: Add professional, customizable photo sliders to your site in seconds.  Powered by the EasyRotator application from DWUser.com.
-Version: 1.0.10
+Version: 1.0.11
 Author: DWUser.com
 Author URI: http://www.dwuser.com/
 License: GPL v2 or later
 */
 
 /*
-Copyright 2011-2012 DWUser.com.
+Copyright 2011-2014 DWUser.com.
 Email contact: support {at] dwuser.com
 
 This file is part of EasyRotator for WordPress.
@@ -62,6 +62,7 @@ class EasyRotator
 {
 	function EasyRotator()
 	{
+        global $wp_version;
 		// --- Initialization ---
 		
 		// note that this automatically matches http/https.
@@ -85,7 +86,15 @@ class EasyRotator
 		add_action( 'admin_footer'    , array( $this, 'hook_admin_footer' ) );
 		add_action( 'admin_footer'    , array( $this, 'editor_easyrotator_manage_dialog' ) );
 		add_action( 'admin_footer'    , array( $this, 'admin_inline_help_content') );
-		
+
+        if (version_compare($wp_version, '3.8.99', '>'))
+        {
+            // Widget support in customizer on 3.9+
+            add_action( 'customize_controls_print_styles'    , array( $this, 'hook_admin_init' ) ); //customize_controls_print_styles
+            add_action( 'customize_controls_print_styles'    , array( $this, 'hook_customizer_styles' ) );
+            add_action( 'customize_controls_print_footer_scripts'    , array( $this, 'editor_easyrotator_manage_dialog_customizer' ) );
+        }
+
 		add_action( 'edit_form_advanced'   , array( $this, 'editor_quicktags' ) );
 		add_action( 'edit_page_form'       , array( $this, 'editor_quicktags' ) );
 		
@@ -141,6 +150,18 @@ class EasyRotator
         wp_enqueue_script( 'swfobject' );
         
 	}
+
+    function hook_customizer_styles()
+    {
+        // This is for special customizer styles.  Make sure that dialogs appear on top of preview (z-index=500000)
+        ?>
+        <style type="text/css">
+            body .ui-front {
+                z-index: 500100 !important;
+            }
+        </style>
+        <?php
+    }
 	
 	function hook_admin_menu()
 	{
@@ -878,22 +899,28 @@ class EasyRotator
 		return $plugin_array;
 	}
 	
-	
+
+    // This is called when the customizer is being used
+    function editor_easyrotator_manage_dialog_customizer()
+    {
+        $this->editor_easyrotator_manage_dialog(true); // $isCustomizer=true
+    }
+
 	/**
 	 * This method is used whenever on the admin post/page editor pages.  Used to write out the manager dialog, 
 	 * which is launched via the tinymce button or the quicktag button.
 	 **/
-	function editor_easyrotator_manage_dialog() { //was editor_tinymce_plugin_dialog()
+    function editor_easyrotator_manage_dialog($isCustomizer = false) { //was editor_tinymce_plugin_dialog()
 		global $erwp;
-		
+
 		// Render only if post/page editing or widget mode on admin page
 	    $pageName = basename( $_SERVER['PHP_SELF'] );
-	    if ( in_array( $pageName, array( 'post-new.php', 'page-new.php', 'post.php', 'page.php', 'widgets.php' ) ) ) { // TOASK: good check, esp widgets?
-	        
+	    if ( in_array( $pageName, array( 'post-new.php', 'page-new.php', 'post.php', 'page.php', 'widgets.php' ) ) || $isCustomizer ) { // TOASK: good check, esp widgets?
+
 	        $engineURL = $this->url . 'engine/main.php';
 			$apiInfo = $this->api_getInfo();
-	        $inWidgetMode = ($pageName == 'widgets.php');
-	        
+	        $inWidgetMode = ($pageName == 'widgets.php' || $isCustomizer);
+
 	        echo('<div style="display:none;">
     				
     				<script type="text/javascript">
@@ -944,11 +971,15 @@ class EasyRotator
 					
 					easyrotator_fs_dialog_launch = function()
 					{
-						if (window[\'fullscreen\']) // just for safety
+						var fullscreen;
+						try {
+						    fullscreen = window[\'fullscreen\'] || window.wp.editor.fullscreen;
+                        } catch (e){}
+						if (fullscreen) // just for safety
 						{
 							// See if we\'re in Visual/tinyMCE or HTML mode in fullscreen; ref: wp-fullscreen.dev.js.
 							var s = fullscreen.settings;
-							if ( s.has_tinymce && s.mode == \'tinymce\' )
+							if ( (s.has_tinymce || s.hasTinymce) && s.mode == \'tinymce\' )
 							{
 								easyrotator_tinymce_dialog_launch();
 							}
@@ -997,7 +1028,7 @@ class EasyRotator
 	        				// Finally, close dialog - asynchronously, to avoid Safari/FP issues
 	        				setTimeout(function(){
 	        				    jQuery("#easyrotator_manage_dialog").dialog("close");
-                            }, 100);
+                            }, 100); // TODO: May need to be increased if issues crop up
 	        			};
 					};
     				</script>
@@ -1294,7 +1325,7 @@ class EasyRotator
 							if (!wrap.data('easyrotatorWidgetBoxInitialized'))
 							{
 								wrap.data('easyrotatorWidgetBoxInitialized', true); // set initialized flag
-								
+
 								// Wire-up the widget form; wrap for persistent scope
 								(function(wrap){
 									
@@ -1327,8 +1358,11 @@ class EasyRotator
 									{
 										if (show)
 										{
-											wrap.find('p.er_save_notification').slideDown();
-											wrap.find('hr.er_bottom_hr').hide();
+                                            if (<?php echo($isCustomizer ? 'false' : 'true'); ?>) // no notification on customizer page due to auto-save
+                                            {
+											    wrap.find('p.er_save_notification').slideDown();
+											    wrap.find('hr.er_bottom_hr').hide();
+                                            }
 										}
 										else
 										{
@@ -1341,6 +1375,9 @@ class EasyRotator
 									{
 										// Update the hidden field; load the name
 										pathField.val(path);
+                                        <?php if ($isCustomizer) { ?>
+                                            pathField.trigger('change'); // trigger the auto-save since this is a hidden field
+                                        <?php } ?>
 										
 										// Show save notification if changed
 										if (path != lastSavedPath)
@@ -1462,9 +1499,12 @@ class EasyRotator
 	
 	function editor_quicktags()
 	{
-		global $erwp;
+		global $erwp, $wp_version;
 	
 		// Append the easyrotator button to the Quicktags section, making it look like the other buttons.
+        $class = 'ed_button';
+        if (version_compare($wp_version, '3.8.99', '>'))
+            $class .= ' button button-small';
 		?>
 		<script type="text/javascript">
         jQuery(function($)
@@ -1476,7 +1516,7 @@ class EasyRotator
                 if ($('#ed_toolbar').children().length == 0)
                     setTimeout(addButtonIfNeeded, tryInterval); // toolbar not ready; wait a tad
                 else
-                    $('#ed_toolbar').append('<input type="button" id="ed_easyrotator" class="ed_button" onclick="easyrotator_quicktags_dialog_launch();" title="Insert rotator into post/page..." value="Insert EasyRotator" style="wascolor:#09F;" />');
+                    $('#ed_toolbar').append('<input type="button" id="ed_easyrotator" class="<?php echo($class); ?>" onclick="easyrotator_quicktags_dialog_launch();" title="Insert rotator into post/page..." value="Insert EasyRotator" style="wascolor:#09F;" />');
             }
             addButtonIfNeeded();
         });
@@ -1753,7 +1793,11 @@ class EasyRotator
 			tinyMCE_setupListeners(tinyMCE_setupListeners);
 			
 			// Finally, listen for exiting fullscreen view if applicable.  Update only when hiding that, since we won't show the edit panel in fs.  Ref: wp-fullscreen.dev.js
-			if (window['fullscreen'] && fullscreen.pubsub && fullscreen.pubsub.subscribe)
+			var fullscreen;
+            try {
+                fullscreen = window['fullscreen'] || window.wp.editor.fullscreen;
+            }catch(e){}
+            if (fullscreen && fullscreen.pubsub && fullscreen.pubsub.subscribe)
 				fullscreen.pubsub.subscribe('hide', function(){  
 					// Wait a second, for the other updates to occur
 					setTimeout(function(){
@@ -2049,7 +2093,13 @@ class EasyRotatorWidget extends WP_Widget
 		$instance['title'] = strip_tags($new_instance['title']);
 		$instance['showTitle'] = $new_instance['showTitle'] == 'true' ? 'true' : 'false';
 		$instance['path'] = strip_tags($new_instance['path']);
-		
+        if (@$instance['form'] == '') // the customizer initially calls with an empty form; we need to add some fake content to force the display to work
+        {
+            ob_start();
+            $this->form($instance);
+            $instance['form'] = ob_end_clean();
+        }
+
 		if (false) // debug
 		{
 			echo('INSTANCE:');
