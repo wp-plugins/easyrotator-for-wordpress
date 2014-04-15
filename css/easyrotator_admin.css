@@ -1,5 +1,5 @@
 /*
-Copyright 2011 DWUser.com.
+Copyright 2011-2014 DWUser.com.
 Email contact: support ~attt~ dwuser.com
 
 This file is part of EasyRotator for WordPress.
@@ -97,6 +97,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 		#wp-fullscreen-buttons .mce_easyrotator .mce_easyrotator:hover {
 			background: transparent url('../img/admin_icons.png?ver=1') no-repeat scroll -6px -133px;
 		}
+
+        /* fs tinymce button for 3.9+ */
+        #wp-fullscreen-buttons #wp_fs_easyrotator {
+            background: transparent url('../img/admin_icons.png?ver=1') no-repeat scroll -3px -163px;
+        }
+        #wp-fullscreen-buttons #wp_fs_easyrotator:hover {
+            background: transparent url('../img/admin_icons.png?ver=1') no-repeat scroll -3px -131px;
+        }
 		
 		/* meta box title icon, more */
 		#easyrotator_edit_shortcut_box .easyrotator_meta_title_icon {
