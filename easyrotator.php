@@ -156,7 +156,7 @@ class EasyRotator
         // This is for special customizer styles.  Make sure that dialogs appear on top of preview (z-index=500000)
         ?>
         <style type="text/css">
-            body .ui-front {
+            body .ui-dialog-easyrotator.ui-front {
                 z-index: 500100 !important;
             }
         </style>
@@ -389,7 +389,7 @@ class EasyRotator
         {
             // Use a higher z-index for the new jQueryUI CSS
             ?>
-            .ui-front {
+            .ui-dialog-easyrotator.ui-front {
                 z-index: 169999 !important;
             }
             <?php
@@ -938,6 +938,7 @@ class EasyRotator
 								title: \'Select a Rotator To Insert\',
 								width: 700,
 								height: 500,
+								dialogClass: \'ui-dialog-easyrotator\',
 								zIndex: 159999 // need to go over fs overlay if applicable (which is 14999)
 							}).dialog("open");
 							');
@@ -1002,6 +1003,7 @@ class EasyRotator
     						echo(
 	    					'jQuery(\'#easyrotator_manage_dialog\').dialog({
 								title: \'Select a Rotator To Display in Widget\',
+								dialogClass: \'ui-dialog-easyrotator\',
 								width: 700,
 								height: 500 // no zIndex needed
 							}).dialog("open");
@@ -1131,6 +1133,7 @@ class EasyRotator
 							title:'EasyRotator Preview: ' + name,
 							width:w,
 							height:h,
+                            dialogClass:'ui-dialog-easyrotator',
 							zIndex:169999 // on top of 		 dialog <strike>no need for zIndex since won't be on top of fs</strike>
 						}).dialog('open');
 						var box = $('#easyrotator_preview_dialog');
@@ -1535,6 +1538,7 @@ class EasyRotator
 					title: \'Select a Rotator To Insert\',
 					width: 700,
 					height: 500,
+					dialogClass: \'ui-dialog-easyrotator\',
 					zIndex: 159999 // need to go over fs overlay if applicable (which is 14999)
 				}).dialog(\'open\');');
 			}
