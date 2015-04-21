@@ -1,5 +1,5 @@
 /*
-Copyright 2011-2014 DWUser.com.
+Copyright 2011-2015 DWUser.com.
 Email contact: support ~attt~ dwuser.com
 
 This file is part of EasyRotator for WordPress.
@@ -225,7 +225,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			/*display: none;
 			position: relative;*/
 			position: absolute;
-			right: -3600px;
+			right: 3600px;
 			
 			background: #FEFEFE;
 			border: 1px solid #777;
