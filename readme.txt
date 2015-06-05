@@ -33,6 +33,10 @@ EasyRotator for WordPress helps you create beautiful, responsive photo rotators 
 * Wizard application (for **editing** rotators) requires Adobe AIR (auto-installer included)
 * To **edit** rotators, Windows or Mac is required.  [Linux usually works](http://www.dwuser.com/support/easyrotator/kb/linux/), but is not officially supported.
 
+**Please Read:**
+
+In order to provide a faster and more seamless editing and preview experience without having to first upload all files, the EasyRotator plugin interfaces with an external editor application (auto-installed via Adobe AIR).  This means there are a couple minutes of additional up-front installation time versus other plugins.  However, we're confident you'll agree with [numerous](https://wordpress.org/support/topic/extremely-easy-to-use-excellent-results) [others](https://wordpress.org/support/topic/perfect-the-result-of-a-long-search) (more [here](https://wordpress.org/support/topic/worked-first-time-3) and [here](https://wordpress.org/support/topic/the-trouble-installing-was-worth-it)) that this results in a much better editing experience.  If you'd prefer not to install any external editor, then EasyRotator unfortunately isn't the best plugin for your needs :/
+
 **Important Links:**
 
 * [Detailed Help](http://www.dwuser.com/support/easyrotator/wordpress/)
